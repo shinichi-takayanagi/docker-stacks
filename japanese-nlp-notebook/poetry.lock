@@ -1,0 +1,226 @@
+[[package]]
+name = "atomicwrites"
+version = "1.4.0"
+description = "Atomic file writes."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[[package]]
+name = "attrs"
+version = "21.4.0"
+description = "Classes Without Boilerplate"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[package.extras]
+dev = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "furo", "sphinx", "sphinx-notfound-page", "pre-commit", "cloudpickle"]
+docs = ["furo", "sphinx", "zope.interface", "sphinx-notfound-page"]
+tests = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "zope.interface", "cloudpickle"]
+tests_no_zope = ["coverage[toml] (>=5.0.2)", "hypothesis", "pympler", "pytest (>=4.3.0)", "six", "mypy", "pytest-mypy-plugins", "cloudpickle"]
+
+[[package]]
+name = "colorama"
+version = "0.4.4"
+description = "Cross-platform colored terminal text."
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "more-itertools"
+version = "8.13.0"
+description = "More routines for operating on iterables, beyond itertools"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[[package]]
+name = "packaging"
+version = "21.3"
+description = "Core utilities for Python packages"
+category = "dev"
+optional = false
+python-versions = ">=3.6"
+
+[package.dependencies]
+pyparsing = ">=2.0.2,<3.0.5 || >3.0.5"
+
+[[package]]
+name = "pluggy"
+version = "0.13.1"
+description = "plugin and hook calling mechanisms for python"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*"
+
+[package.extras]
+dev = ["pre-commit", "tox"]
+
+[[package]]
+name = "py"
+version = "1.11.0"
+description = "library with cross-python path, ini-parsing, io, code, log facilities"
+category = "dev"
+optional = false
+python-versions = ">=2.7, !=3.0.*, !=3.1.*, !=3.2.*, !=3.3.*, !=3.4.*"
+
+[[package]]
+name = "pyparsing"
+version = "3.0.9"
+description = "pyparsing module - Classes and methods to define and execute parsing grammars"
+category = "dev"
+optional = false
+python-versions = ">=3.6.8"
+
+[package.extras]
+diagrams = ["railroad-diagrams", "jinja2"]
+
+[[package]]
+name = "pytest"
+version = "5.4.3"
+description = "pytest: simple powerful testing with Python"
+category = "dev"
+optional = false
+python-versions = ">=3.5"
+
+[package.dependencies]
+atomicwrites = {version = ">=1.0", markers = "sys_platform == \"win32\""}
+attrs = ">=17.4.0"
+colorama = {version = "*", markers = "sys_platform == \"win32\""}
+more-itertools = ">=4.0.0"
+packaging = "*"
+pluggy = ">=0.12,<1.0"
+py = ">=1.5.0"
+wcwidth = "*"
+
+[package.extras]
+checkqa-mypy = ["mypy (==v0.761)"]
+testing = ["argcomplete", "hypothesis (>=3.56)", "mock", "nose", "requests", "xmlschema"]
+
+[[package]]
+name = "sudachidict-core"
+version = "20211220"
+description = "Sudachi Dictionary for SudachiPy - Core Edition"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+SudachiPy = ">=0.5,<0.7"
+
+[[package]]
+name = "sudachidict-full"
+version = "20211220"
+description = "Sudachi Dictionary for SudachiPy - Full Edition"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+SudachiPy = ">=0.5,<0.7"
+
+[[package]]
+name = "sudachidict-small"
+version = "20211220"
+description = "Sudachi Dictionary for SudachiPy - Small Edition"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.dependencies]
+SudachiPy = ">=0.5,<0.7"
+
+[[package]]
+name = "sudachipy"
+version = "0.6.3"
+description = "Python version of Sudachi, the Japanese Morphological Analyzer"
+category = "main"
+optional = false
+python-versions = "*"
+
+[package.extras]
+tests = ["tokenizers", "sudachidict-core"]
+
+[[package]]
+name = "wcwidth"
+version = "0.2.5"
+description = "Measures the displayed width of unicode strings in a terminal"
+category = "dev"
+optional = false
+python-versions = "*"
+
+[metadata]
+lock-version = "1.1"
+python-versions = "3.9.12"
+content-hash = "d8181f219f4f5e58c2b3400797874887c454dc74afd49723b1ab07cad5d0cf66"
+
+[metadata.files]
+atomicwrites = [
+    {file = "atomicwrites-1.4.0-py2.py3-none-any.whl", hash = "sha256:6d1784dea7c0c8d4a5172b6c620f40b6e4cbfdf96d783691f2e1302a7b88e197"},
+    {file = "atomicwrites-1.4.0.tar.gz", hash = "sha256:ae70396ad1a434f9c7046fd2dd196fc04b12f9e91ffb859164193be8b6168a7a"},
+]
+attrs = [
+    {file = "attrs-21.4.0-py2.py3-none-any.whl", hash = "sha256:2d27e3784d7a565d36ab851fe94887c5eccd6a463168875832a1be79c82828b4"},
+    {file = "attrs-21.4.0.tar.gz", hash = "sha256:626ba8234211db98e869df76230a137c4c40a12d72445c45d5f5b716f076e2fd"},
+]
+colorama = [
+    {file = "colorama-0.4.4-py2.py3-none-any.whl", hash = "sha256:9f47eda37229f68eee03b24b9748937c7dc3868f906e8ba69fbcbdd3bc5dc3e2"},
+    {file = "colorama-0.4.4.tar.gz", hash = "sha256:5941b2b48a20143d2267e95b1c2a7603ce057ee39fd88e7329b0c292aa16869b"},
+]
+more-itertools = [
+    {file = "more-itertools-8.13.0.tar.gz", hash = "sha256:a42901a0a5b169d925f6f217cd5a190e32ef54360905b9c39ee7db5313bfec0f"},
+    {file = "more_itertools-8.13.0-py3-none-any.whl", hash = "sha256:c5122bffc5f104d37c1626b8615b511f3427aa5389b94d61e5ef8236bfbc3ddb"},
+]
+packaging = [
+    {file = "packaging-21.3-py3-none-any.whl", hash = "sha256:ef103e05f519cdc783ae24ea4e2e0f508a9c99b2d4969652eed6a2e1ea5bd522"},
+    {file = "packaging-21.3.tar.gz", hash = "sha256:dd47c42927d89ab911e606518907cc2d3a1f38bbd026385970643f9c5b8ecfeb"},
+]
+pluggy = [
+    {file = "pluggy-0.13.1-py2.py3-none-any.whl", hash = "sha256:966c145cd83c96502c3c3868f50408687b38434af77734af1e9ca461a4081d2d"},
+    {file = "pluggy-0.13.1.tar.gz", hash = "sha256:15b2acde666561e1298d71b523007ed7364de07029219b604cf808bfa1c765b0"},
+]
+py = [
+    {file = "py-1.11.0-py2.py3-none-any.whl", hash = "sha256:607c53218732647dff4acdfcd50cb62615cedf612e72d1724fb1a0cc6405b378"},
+    {file = "py-1.11.0.tar.gz", hash = "sha256:51c75c4126074b472f746a24399ad32f6053d1b34b68d2fa41e558e6f4a98719"},
+]
+pyparsing = [
+    {file = "pyparsing-3.0.9-py3-none-any.whl", hash = "sha256:5026bae9a10eeaefb61dab2f09052b9f4307d44aee4eda64b309723d8d206bbc"},
+    {file = "pyparsing-3.0.9.tar.gz", hash = "sha256:2b020ecf7d21b687f219b71ecad3631f644a47f01403fa1d1036b0c6416d70fb"},
+]
+pytest = [
+    {file = "pytest-5.4.3-py3-none-any.whl", hash = "sha256:5c0db86b698e8f170ba4582a492248919255fcd4c79b1ee64ace34301fb589a1"},
+    {file = "pytest-5.4.3.tar.gz", hash = "sha256:7979331bfcba207414f5e1263b5a0f8f521d0f457318836a7355531ed1a4c7d8"},
+]
+sudachidict-core = [
+    {file = "SudachiDict-core-20211220.tar.gz", hash = "sha256:3794da698686a224364f148b33b095292e68974cbecf7921ea9aaf69c91d9ec5"},
+]
+sudachidict-full = [
+    {file = "SudachiDict-full-20211220.tar.gz", hash = "sha256:78fe060ea2a9d9d52f2e02bff8be6448b9bfd68d35ec2408a28b557ba697be36"},
+]
+sudachidict-small = [
+    {file = "SudachiDict-small-20211220.tar.gz", hash = "sha256:9a8ad4185bc901895ad8eb2c321b8770856d75fae627f5b7f4131f52814b48a3"},
+]
+sudachipy = [
+    {file = "SudachiPy-0.6.3-cp310-cp310-macosx_10_15_x86_64.whl", hash = "sha256:a7c25aaae3614879fec293ac370cafa0012f6493e99300a1b613134e2f73aff0"},
+    {file = "SudachiPy-0.6.3-cp310-cp310-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:a9c4776d72c43e7882134c1dc4e8c28541fc5f23592ac3e2fdd7989c6fb29711"},
+    {file = "SudachiPy-0.6.3-cp310-cp310-win_amd64.whl", hash = "sha256:42586a4ca719080739ba9f2a4299aa214a2fc63ed4605d0c62000e40c55e7f7f"},
+    {file = "SudachiPy-0.6.3-cp36-cp36m-macosx_10_14_x86_64.whl", hash = "sha256:ef9f28f5e8fbb72e62f8a9cffd8934da4c229aa6321265e8876938beef9eb0df"},
+    {file = "SudachiPy-0.6.3-cp36-cp36m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:7231fd069e250ef349ba4bf74a63c22b667e1da429cdb2b51cf8f29f13866921"},
+    {file = "SudachiPy-0.6.3-cp36-cp36m-win_amd64.whl", hash = "sha256:0197e0fe2aa336c111f63bb772cc3de567b2bb880f219d505248b4c1a0098e42"},
+    {file = "SudachiPy-0.6.3-cp37-cp37m-macosx_10_14_x86_64.whl", hash = "sha256:d31e496c5d452b42c7faf3fed8e91bffbb4c5293ecdec17a61dd2339da2cbe03"},
+    {file = "SudachiPy-0.6.3-cp37-cp37m-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e3fbd4e4f3153a3f6c857110940b3910893d2bd4ad06d166f6b64ce73e58771d"},
+    {file = "SudachiPy-0.6.3-cp37-cp37m-win_amd64.whl", hash = "sha256:d7201862d2585f5ed7ad0fca02732ce8e019172b3921c9d49e98470af2457a24"},
+    {file = "SudachiPy-0.6.3-cp38-cp38-macosx_10_14_x86_64.whl", hash = "sha256:747ea92ee744cd84e4f7491de795dc6cde6ad5cefd2f916bddd8a08a793d181b"},
+    {file = "SudachiPy-0.6.3-cp38-cp38-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:0fbc1c872a35962c426d3edf28910a7e97045210e517123f3779f0db388376a2"},
+    {file = "SudachiPy-0.6.3-cp38-cp38-win_amd64.whl", hash = "sha256:204c247f633a5f30a3e5a3235df2af693d013df39eccd8315abe2a2aae40419e"},
+    {file = "SudachiPy-0.6.3-cp39-cp39-macosx_10_15_x86_64.whl", hash = "sha256:8d42ddfe3ae4eaaf1afc70a23ddc82e5aa810b50eb7f64f1f8be6b5f86bf897a"},
+    {file = "SudachiPy-0.6.3-cp39-cp39-manylinux_2_5_x86_64.manylinux1_x86_64.manylinux_2_12_x86_64.manylinux2010_x86_64.whl", hash = "sha256:e6dca0ad438ddbfb09eef47c3712abb6d0936a34afb1781c22205f68b647d88f"},
+    {file = "SudachiPy-0.6.3-cp39-cp39-win_amd64.whl", hash = "sha256:0720a329daeb75608d885313d5ab5be0ff674b495bc7d87ba78bb33ee07bb3ec"},
+    {file = "SudachiPy-0.6.3.tar.gz", hash = "sha256:b938c598d9cd42a1b7e28069d304c685d9ea41022469abbf09d66ed626250e37"},
+]
+wcwidth = [
+    {file = "wcwidth-0.2.5-py2.py3-none-any.whl", hash = "sha256:beb4802a9cebb9144e99086eff703a642a13d6a0052920003a230f3294bbe784"},
+    {file = "wcwidth-0.2.5.tar.gz", hash = "sha256:c4d647b99872929fdb7bdcaa4fbe7f01413ed3d98077df798530e5b04f116c83"},
+]
